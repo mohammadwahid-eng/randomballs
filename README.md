@@ -26,8 +26,9 @@ An animated area where different sizes of balls are playing randomly.
 </script>
 ```
 
+#### Default options
 ```
-options: {
+{
   colors: ["#eb4d4b", "#6ab04c", "#130f40", "#4834d4", "#f0932b", "#be2edd", "#353b48"], // list of colors
   balls: 50, // number of balls to be played
   speed: 2000, // miliseconds
