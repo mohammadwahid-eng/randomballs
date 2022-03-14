@@ -55,6 +55,8 @@ Copyright (c) 2022 http://mohammadwahid.com
 			return balls;
 		}
 		
+		this.classList.add('.randomballs');
+		
 		return this.append(ballList);
 	}
 	
