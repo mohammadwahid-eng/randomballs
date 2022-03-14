@@ -15,6 +15,7 @@ Copyright (c) 2022 http://mohammadwahid.com
 		let settings = $.extend({
 			colors: ["#eb4d4b", "#6ab04c", "#130f40", "#4834d4", "#f0932b", "#be2edd", "#353b48"],
 			balls: 50,
+			ballClass: 'ball',
 			speed: 2000,
 		}, options);
 
@@ -26,11 +27,12 @@ Copyright (c) 2022 http://mohammadwahid.com
 					y: Math.random() * 12
 				};
 				let ball = document.createElement("div");
+				ball.classList.add(settings.ballClass);
 				ball.style.background = settings.colors[Math.floor(Math.random() * settings.colors.length)];
 				ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
 				ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
 				ball.style.transform = `scale(${Math.random()})`;
-				ball.style.width = `${Math.random()}em`;
+				ball.style.width = `${Math.random()}rem`;
 				ball.style.height = ball.style.width;
 
 				ball.animate(
@@ -55,4 +57,5 @@ Copyright (c) 2022 http://mohammadwahid.com
 		
 		return this.append(ballList);
 	}
+	
 })(jQuery);
